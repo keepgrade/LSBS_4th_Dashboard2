@@ -377,7 +377,7 @@ fig2.show()  # ← 이 줄이 반드시 있어야 합니다!
 
 ```
 
-#### Ames 피트당 거래 가격
+#### Ames 평당 거래 가격
 
 ```{python}
 #| echo: false
@@ -524,6 +524,7 @@ fig3.show()
 - $DM$: denominator
 - $\operatorname{TotalSF}$: 총 건물 면적
 - $SF_i$: 각 층의 총면적($i = \{0, ..., N \} = \{지하, 1층, 2층 \}$)
+- $35.5832$ : 피트 -> 평 변환
 :::
 
 ::: {.card title="📉 3. 가격 분포 막대그래프"}
