@@ -791,7 +791,7 @@ ames = dataloader.load_data()
 target = 'SalePrice'
 y = ames[target]
 
-ig_cols = ['PID','SalePrice','GeoRefNo','Prop_Addr','Latitude','Longitude','Risk_RoofMatl','Risk_Exterior1st','Risk_Exterior2nd','Risk_MasVnrType','Risk_WoodDeckSF']
+ig_cols = ['PID','SalePrice','GeoRefNo','Prop_Addr','Latitude','Longitude','Date','Risk_RoofMatl','Risk_Exterior1st','Risk_Exterior2nd','Risk_MasVnrType','Risk_WoodDeckSF', 'BuildingPricePerTotalSF','BuildingValue', 'LandValue', 'TotalSF']
 X = ames.drop(columns=ig_cols)
 
 # 학습/테스트 데이터 분할
@@ -819,11 +819,11 @@ _ = plt.show()
 
 ```
 
-- MSE:  25903.67405431691
+- MSE:  498673313.47293
 
-- RMSE: 160.94618372088513
+- RMSE: 22330.99445776945
 
-- $R^2$: 0.9999953867303233
+- $R^2$: 0.9111896454987102
 :::
 
 ### Column {width=50%}
